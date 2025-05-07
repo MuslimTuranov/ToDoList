@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Децентрализованное ToDo-приложение
+
+## Описание проекта
+
+Это децентрализованное веб-приложение (dApp), позволяющее пользователю создавать, удалять и изменять статус задач. Все данные хранятся в блокчейне Ethereum (сеть Sepolia). Пользователь взаимодействует с контрактом через MetaMask и Web3.js.
+
+Фронтенд написан на React, взаимодействие с блокчейном осуществляется через Web3.js и смарт-контракт, написанный на Solidity. Для подключения используется MetaMask, а для связи с блокчейном — Alchemy RPC.
+
+## Функциональность
+
+- Просмотр всех задач из смарт-контракта
+- Добавление новых задач
+- Отметка задачи как выполненной 
+- Удаление задачи
+- Подключение аккаунта MetaMask для выполнения транзакций
+
+## Структура проекта
+
+
