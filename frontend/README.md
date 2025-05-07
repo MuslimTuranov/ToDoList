@@ -85,6 +85,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Удаление задачи
 - Подключение аккаунта MetaMask для выполнения транзакций
 
-## Структура проекта
+
 
 
