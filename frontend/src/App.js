@@ -261,7 +261,6 @@ const App = () => {
       const contract = new web3.eth.Contract(contractABI, contractAddress);
       await contract.methods.createTask(taskDescription).send({ from: account });
       setTaskDescription('');
-      // Instead of reloading, consider updating the state directly
       const tasksCount = await contract.methods.taskCount().call();
       const newTask = await contract.methods.getTask(tasksCount).call();
       setTasks([...tasks, newTask]);
@@ -280,7 +279,6 @@ const App = () => {
     try {
       const contract = new web3.eth.Contract(contractABI, contractAddress);
       await contract.methods.toggleCompleted(id).send({ from: account });
-      // Update the task in state instead of reloading
       const updatedTask = await contract.methods.getTask(id).call();
       setTasks(tasks.map(task => task.id === id ? updatedTask : task));
     } catch (error) {
@@ -298,7 +296,6 @@ const App = () => {
     try {
       const contract = new web3.eth.Contract(contractABI, contractAddress);
       await contract.methods.deleteTask(id).send({ from: account });
-      // Remove the task from state instead of reloading
       setTasks(tasks.filter(task => task.id !== id));
     } catch (error) {
       console.error('Error deleting task:', error);

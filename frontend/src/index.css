@@ -188,7 +188,6 @@ h1 {
   cursor: not-allowed;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   body {
     padding: 1rem;
